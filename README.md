@@ -1,5 +1,7 @@
 # SIGNAL-AV
 
+[Portfolio](https://github.com/Unmute1-Ai/Unmute1ai#readme) · [Engineering](https://github.com/Unmute1-Ai/U1Ai#readme) · [Security evidence](https://github.com/Unmute1-Ai/glass-box#readme)
+
 **ASL intent bridge for autonomous-vehicle interfaces.**
 
 SIGNAL-AV explores how signed or accessible human communication can be normalized into **safe, auditable context** for autonomous-driving systems.
@@ -8,21 +10,12 @@ SIGNAL-AV explores how signed or accessible human communication can be normalize
 
 ## Reference flow
 
-```text
-ASL / gesture / accessible input
-        |
-        v
-local perception + confidence
-        |
-        v
-normalized intent
-        |
-        v
-vehicle-context adapter
-        |
-        v
-external safety / authority controller
-```
+| Stage | Role |
+| --- | --- |
+| Accessible input | Express a sign, gesture, or other communication signal |
+| Perception | Produce a candidate interpretation with confidence |
+| Intent adapter | Translate the candidate into vehicle context |
+| External controller | Independently validate and authorize any vehicle action |
 
 The accessibility layer may express intent such as “stop,” “help,” or “I need assistance,” but it does not itself receive steering, braking, navigation, or emergency-dispatch authority.
 
